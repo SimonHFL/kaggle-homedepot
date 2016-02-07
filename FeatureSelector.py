@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 
 def check(df, predictors, target):
-    
+
     # Perform feature selection
     selector = SelectKBest(f_classif, k=2)
     selector.fit(df[predictors], df[target])
